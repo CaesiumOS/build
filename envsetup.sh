@@ -1255,12 +1255,10 @@ if [[ "$USE_LEFTOVERS" -eq 1 ]]; then
 fi
 
 export LANG=C.UTF-8
-export BUILD_DATETIME=${BUILD_DATETIME:-$(cat ${OUT_DIR:-out}/build_date.txt 2>/dev/null || date -u +%s)}
-export BUILD_NUMBER=${BUILD_NUMBER:-$(cat ${OUT_DIR:-out}/soong/build_number.txt 2>/dev/null || date -u -d @$BUILD_DATETIME +%Y%m%d00)}
-export BUILD_USERNAME=android-user
-export BUILD_HOSTNAME=r-0123456789abcdef-0123
+export BUILD_DATETIME=${date -u +%s}
+export BUILD_NUMBER=26005
 
-echo "export BUILD_DATETIME=$BUILD_DATETIME BUILD_NUMBER=$BUILD_NUMBER"
+echo "CaesiumOS 4.0.1 ($BUILD_NUMBER), built $BUILD_DATETIME"
 
 alias adevtool='vendor/adevtool/bin/run'
 alias adto='vendor/adevtool/bin/run'
