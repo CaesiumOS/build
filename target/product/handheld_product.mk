@@ -23,16 +23,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 # /product packages
 PRODUCT_PACKAGES += \
     AppStore \
-    Calendar \
-    Camera \
+    Etar \
+    Aperture \
     Contacts \
     DeskClock \
     ExactCalculator \
-    Gallery2 \
+    Glimpse \
     LatinIME \
-    Music \
+    Twelve \
     PdfViewerGOS \
     preinstalled-packages-platform-handheld-product.xml \
+    Recorder \
     SettingsIntelligence \
     SpeechServices \
     talkback \
